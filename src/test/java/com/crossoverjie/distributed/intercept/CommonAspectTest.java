@@ -42,8 +42,7 @@ public class CommonAspectTest {
         try {
             Mockito.when(redisLimit.limit()).thenReturn(false);
             commonAspect.before(null);
-
-
+            int a=0/1;
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
