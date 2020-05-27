@@ -42,11 +42,11 @@ public class CommonAspectTest {
         try {
             Mockito.when(redisLimit.limit()).thenReturn(false);
             commonAspect.before(null);
-            int a=0/0;
+            
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-
+        int a=0/0;
         boolean limit = redisLimit.limit();
         System.out.println(limit);
         assertFalse(limit);
